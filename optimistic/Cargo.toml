@@ -1,0 +1,12 @@
+[package]
+name = "fherma-solution"
+version = "0.1.0"
+edition = "2021"
+
+# blst: the BLS12-381 library Ethereum's clients sign and verify with, in
+# assembly behind a C API. The crate carries both and builds them itself.
+[dependencies]
+blst = "0.3"
+
+[profile.release]
+opt-level = 3
